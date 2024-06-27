@@ -1,0 +1,237 @@
+{
+    // Configurações gerais do editor
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.8,
+    "editor.rulers": [80, 120],
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.showExitAlert": false,
+
+    // Configurações específicas para arquivos e associações
+    "files.associations": {
+        ".env.*": "dotenv", // Associa arquivos .env ao suporte de sintaxe DotENV
+        ".prettierrc": "json", // Associa arquivos .prettierrc a sintaxe JSON
+        "*.css": "css" // Associa arquivos .css ao suporte de sintaxe CSS
+    },
+
+    // Configurações para sugestões e imports automáticos
+    "javascript.suggest.autoImports": true, // Habilita importações automáticas para JavaScript
+    "typescript.suggest.autoImports": true, // Habilita importações automáticas para TypeScript
+    "javascript.updateImportsOnFileMove.enabled": "always", // Atualiza importações automaticamente ao mover arquivos JavaScript
+    "typescript.updateImportsOnFileMove.enabled": "always", // Atualiza importações automaticamente ao mover arquivos TypeScript
+
+    // Configuração de formatação automática ao salvar
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit" // Executa todas as correções do ESLint ao salvar o arquivo
+    },
+
+    // Configurações do ESLint para validação de código
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript"
+    ],
+
+    // Configurações do GitLens
+    "gitlens.codeLens.recentChange.enabled": false, // Desabilita CodeLens para mudanças recentes no GitLens
+    "gitlens.codeLens.authors.enabled": false, // Desabilita CodeLens para autores no GitLens
+
+    // Configuração do tema e ícones
+    "workbench.colorTheme": "Min Dark", // Define o tema de cores como Min Dark
+    "workbench.iconTheme": "material-icon-theme", // Define o conjunto de ícones como vscode-icons
+
+    // Configurações do Terminal
+    "terminal.integrated.fontSize": 14, // Define o tamanho da fonte no terminal como 14
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font", // Define a família da fonte no terminal
+    "terminal.integrated.gpuAcceleration": "off", // Desabilita a aceleração de GPU no terminal
+    "terminal.integrated.defaultProfile.windows": "PowerShell", // Define o perfil padrão do terminal como PowerShell para Windows
+
+    // Configuração do Git
+    "git.enableSmartCommit": true, // Habilita commits inteligentes no Git
+    "git.openRepositoryInParentFolders": "always", // Abre repositórios do Git automaticamente na pasta pai
+
+    // Configurações do Explorador de Arquivos
+    "explorer.confirmDelete": false, // Desabilita a confirmação de exclusão no explorador de arquivos
+    "explorer.compactFolders": false, // Desabilita o modo de pastas compactas no explorador de arquivos
+    "explorer.confirmDragAndDrop": false, // Desabilita a confirmação de arrastar e soltar no explorador de arquivos
+    "explorer.sortOrder": "foldersNestsFiles", // Ordena pastas primeiro, depois arquivos no explorador de arquivos
+    "explorer.fileNesting.enabled": true, // Habilita aninhamento de arquivos no explorador de arquivos
+    "explorer.fileNesting.patterns": {
+        "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*", // Padrões de aninhamento para arquivos específicos
+        "tailwind.config.js": "tailwind.config*, postcss.config*", // Padrões de aninhamento para arquivos específicos
+        ".env.local": ".env*", // Padrões de aninhamento para arquivos específicos
+        ".env": ".env*" // Padrões de aninhamento para arquivos específicos
+    },
+
+    // Configurações específicas das extensões
+
+    // Auto Close Tag
+    "html.autoClosingTags": true, // Habilita o fechamento automático de tags HTML
+
+    // Better Comments
+    "better-comments.tags": [
+        {
+            "tag": "!", // Comentários importantes
+            "color": "#FF2D00", // Cor para comentários importantes
+            "strikethrough": false, // Sem tachado
+            "backgroundColor": "transparent" // Fundo transparente
+        },
+        {
+            "tag": "?", // Perguntas
+            "color": "#3498DB", // Cor para perguntas
+            "strikethrough": false, // Sem tachado
+            "backgroundColor": "transparent" // Fundo transparente
+        },
+        {
+            "tag": "//", // Comentários regulares
+            "color": "#474747", // Cor para comentários regulares
+            "strikethrough": true, // Com tachado
+            "backgroundColor": "transparent" // Fundo transparente
+        }
+    ],
+
+    // Bookmarks
+    "bookmarks.enabled": true, // Habilita o uso de marcadores no editor
+
+    // Code Runner
+    "code-runner.executorMap": {
+        "javascript": "node", // Mapeia JavaScript para executar com Node.js
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt", // Mapeia Java para compilar e executar
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt", // Mapeia C para compilar e executar
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt", // Mapeia C++ para compilar e executar
+        "php": "php", // Mapeia PHP para executar com PHP CLI
+        "python": "python -u" // Mapeia Python para executar com Python padrão
+    },
+
+    // Console Ninja
+    "console-ninja.featureSet": "Community", // Define o conjunto de recursos para Console Ninja como Community
+
+    // Schemas YAML
+    "yaml.schemas": {
+        "file:///c%3A/Users/ygmen/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+
+    // Variáveis de ambiente do Terminal
+    "terminal.integrated.env.windows": {}, // Define variáveis de ambiente específicas para o terminal do Windows
+
+    // Debugger for Java
+    "java.debug.settings": {}, // Configurações de depuração para Java
+
+    // DotENV
+    "dotenv.extension": true, // Habilita suporte para arquivos .env
+
+    // ESLint
+    "eslint.options": {}, // Opções adicionais para o ESLint
+
+    // Fluent Icons
+    "fluent.icons.autoGenerate": true, // Gera ícones Fluent automaticamente
+
+    // Git History
+    "git.historyExplorer.enabled": true, // Habilita o explorador de histórico do Git
+
+    // IntelliCode
+    "intelliCode.suggestions.enabled": true, // Habilita sugestões do IntelliCode
+
+    // IntelliCode API
+    // Configurações específicas para a API do IntelliCode
+
+    // JavaScript (ES6) code snippets
+    "javascript.snippetPreferences": {
+        "react": {
+            "prefix": "rc", // Prefixo para snippets React
+            "body": ["const [$1, set$2] = useState($3);"] // Corpo do snippet para useState em React
+        }
+    },
+
+    // Live Server
+    "liveServer.settings.donotShowInfoMsg": true, // Suprime mensagens informativas do Live Server
+
+    // Min Theme
+    "min.theme.styles": {}, // Estilos adicionais para o tema Min
+
+    // npm intellisense
+    "npm-intellisense.autoDetectPath": true, // Detecta automaticamente o caminho do npm
+
+    // prettier
+    "prettier.requireConfig": true, // Requer um arquivo de configuração do Prettier
+
+    // symbols
+    // Configurações específicas para símbolos no editor
+
+    // modo tree
+    "explorer.view.mode": "list", // Define o modo de visualização do explorador como lista
+
+    // Docker
+    // Configurações específicas para Docker
+
+    // Jira and Bitbucket (Atlassian Labs)
+    // Configurações específicas para integração com Jira e Bitbucket
+
+    // Path Autocomplete
+    // Configurações específicas para autocompletar caminhos
+
+    // Project Manager
+    // Configurações específicas para gerenciador de projetos
+
+    // Docker
+    // Configurações específicas para Docker
+
+    // Jira and Bitbucket (Atlassian Labs)
+    // Configurações específicas para integração com Jira e Bitbucket
+
+    // Path Autocomplete
+    // Configurações específicas para autocompletar caminhos
+
+    // Project Manager
+    // Configurações específicas para gerenciador de projetos
+
+    // Error Lens
+    // Configurações específicas para a extensão Error Lens
+
+
+    //  (Resumo das Extensões DevMendes21) \\
+    "extensions": [
+        "Auto Close Tag",
+        "Better Comments",
+        "Bookmarks",
+        "Code Runner",
+        "Console Ninja",
+        "Database Client JDBC",
+        "Debugger for Java",
+        "DotENV",
+        "EsLint",
+        "Extension Pack for Java",
+        "Fluent Icons",
+        "Git History",
+        "GitLens",
+        "IntelliCode",
+        "ItelliCode API",
+        "JavaScript (ES6) code snippets",
+        "Jest",
+        "Language Support for Java(TM) by Red Hat",
+        "Live Server",
+        "Min Theme",
+        "MySQL",
+        "npm intellisense",
+        "path intellisense",
+        "polacode",
+        "prettier",
+        "project manager for java",
+        "regex snippets",
+        "rest client",
+        "spring boot tools",
+        "sqlite viewer",
+        "sql tools",
+        "symbols",
+        "test runner for java",
+        "modo tree",
+        "Docker",
+        "Jira and Bitbucket (Atlassian Labs)",
+        "Path Autocomplete",
+        "Project Manager",
+        "Error Lens",
+        "Material Icon Theme",
+        "Portuguese (Brazil) Language Pack for Visual Studio Code"
+    ],
+    "symbols.hidesExplorerArrows": false
+}
