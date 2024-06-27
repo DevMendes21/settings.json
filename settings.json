@@ -231,7 +231,8 @@
         "Project Manager",
         "Error Lens",
         "Material Icon Theme",
-        "Portuguese (Brazil) Language Pack for Visual Studio Code"
+        "Portuguese (Brazil) Language Pack for Visual Studio Code",
+        "Live Share"
     ],
     "symbols.hidesExplorerArrows": false
 }
