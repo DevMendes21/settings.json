@@ -25,7 +25,6 @@
     "window.nativeTabs": true,
     "window.titleBarStyle": "native",
     "terminal.integrated.macOptionIsMeta": true,
-    "terminal.integrated.defaultLocation": "editor",
     "terminal.integrated.env.osx": {
         "PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin"
     },
