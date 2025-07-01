@@ -81,7 +81,7 @@
     // Docker
     "docker.host": "unix:///var/run/docker.sock",
     "docker.enableTelemetry": false,
-    "remote.containers.defaultExtensions": [
+    "dev.containers.defaultExtensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode"
     ],
@@ -202,7 +202,21 @@
     },
 
     "yaml.schemas": {
-        "file:///Users/yagomendes/.windsurf/extensions/atlassian.atlascode-3.2.1-universal/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///Users/mendes/.vscode/extensions/atlassian.atlascode-3.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
-    "redhat.telemetry.enabled": true
+    "redhat.telemetry.enabled": true,
+    "console-ninja.featureSet": "Community",
+    "pomodoro.workTime": 50,
+    "pomodoro.pauseTime": 10,
+    "pomodoro.repeat": 7,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.codeActions.triggerOnFocusChange": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "python": true
+    },
+    "github.copilot.nextEditSuggestions.enabled": true
 }
