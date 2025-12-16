@@ -1,6 +1,7 @@
 {
     // Configurações gerais do editor
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.indent": 18,
     "editor.fontSize": 14,
     "editor.lineHeight": 1.8,
     "editor.rulers": [80, 120],
@@ -36,7 +37,7 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "javascript.suggest.autoImports": true,
     "typescript.suggest.autoImports": true,
-    "js/ts.implicitProjectConfig.checkJs": true,
+    "js/ts.implicitProjectConfig.checkJs": false,
     "typescript.inlayHints.parameterNames.enabled": "all",
     "javascript.inlayHints.parameterNames.enabled": "all",
 
@@ -81,6 +82,7 @@
     // Docker
     "docker.host": "unix:///var/run/docker.sock",
     "docker.enableTelemetry": false,
+    "docker.extension.enableComposeLanguageServer": false,
     "dev.containers.defaultExtensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode"
@@ -202,7 +204,7 @@
     },
 
     "yaml.schemas": {
-        "file:///Users/mendes/.vscode/extensions/atlassian.atlascode-3.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///Users/mendes/.vscode/extensions/atlassian.atlascode-4.0.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "redhat.telemetry.enabled": true,
     "console-ninja.featureSet": "Community",
